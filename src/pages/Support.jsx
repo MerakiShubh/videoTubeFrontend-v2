@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaTwitter,
   FaLinkedin,
@@ -9,21 +8,21 @@ import {
 
 const Support = () => {
   const personalInfo = {
-    name: "H Harinadh",
-    email: "eccentricharry@gmail.com",
+    name: "Shubham Tiwari",
+    email: "hellomerakishubh@gmai.com",
   };
   const links = [
-    { name: "Twitter", icon: FaTwitter, url: "https://x.com/Hari_5297" },
+    { name: "Twitter", icon: FaTwitter, url: "https://x.com/merakishubh" },
     {
       name: "LinkedIn",
       icon: FaLinkedin,
-      url: "https://www.linkedin.com/in/h-harinadh/",
+      url: "https://www.linkedin.com/in/merakishubh/",
     },
-    { name: "GitHub", icon: FaGithub, url: "https://github.com/Eccentric-Harry" },
+    { name: "GitHub", icon: FaGithub, url: "https://github.com/merakishubh" },
     {
       name: "Discord",
       icon: FaDiscord,
-      url: "https://discord.com/users/eccentricharry",
+      url: "https://discord.com/users/merakishubh",
     },
   ];
 
