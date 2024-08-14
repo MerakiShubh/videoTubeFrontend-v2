@@ -1,10 +1,9 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useLogin } from "../hooks/auth.hook";
 import { Input, SpButton } from "./index";
-
+import PropTypes from "prop-types";
 function LoginForm({ onLogin }) {
   const schema = z.object({
     usernameOrEmail: z
@@ -24,8 +23,10 @@ function LoginForm({ onLogin }) {
   const { mutateAsync: login, isPending, isError, error } = useLogin();
 
   const loginUser = async (data) => {
+    console.log("Login attempt with data:", data);
     try {
       const session = await login(data);
+      console.log("Login successful, session data:", session);
       if (session) {
         onLogin(session);
       }
@@ -34,8 +35,12 @@ function LoginForm({ onLogin }) {
     }
   };
   return (
-    <form onSubmit={handleSubmit(loginUser)} className="flex flex-col text-[#FFFFFF]">
-      <Input className="text-white"
+    <form
+      onSubmit={handleSubmit(loginUser)}
+      className="flex flex-col text-[#FFFFFF]"
+    >
+      <Input
+        className="text-white"
         label={"Username/Email*"}
         type="text"
         placeholder="Username"
@@ -67,5 +72,9 @@ function LoginForm({ onLogin }) {
     </form>
   );
 }
+
+LoginForm.propTypes = {
+  onLogin: PropTypes.func.isRequired,
+};
 
 export default LoginForm;

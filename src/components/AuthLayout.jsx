@@ -8,7 +8,6 @@ import {
   GuestLikedVideos,
   GuestHistory,
   GuestSettings,
-  GuestNow,
 } from "./GuestPages/GuestComponents.jsx";
 
 const guestComponents = {

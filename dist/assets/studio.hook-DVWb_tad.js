@@ -1,0 +1,1 @@
+import{ac as e,ad as n,ae as a,af as s}from"./index-QFptoyZp.js";const u=()=>e({queryKey:["channelStats"],queryFn:n}),r=()=>e({queryKey:["channelVideos"],queryFn:a}),o=()=>e({queryKey:["channelAbout"],queryFn:s});export{u as a,o as b,r as u};

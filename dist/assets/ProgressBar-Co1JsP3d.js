@@ -1,0 +1,1 @@
+import{j as i}from"./index-QFptoyZp.js";const t=()=>i.jsx("div",{className:"sticky top-0 z-40 w-full h-2 bg-gray-200 overflow-hidden",children:i.jsx("div",{className:"absolute h-2 bg-blue-500 w-1/4 animate-slide",style:{animationDuration:"2s",animationIterationCount:"infinite"}})});export{t as P};

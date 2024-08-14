@@ -12,7 +12,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://videotube-backend-wyz1.onrender.com/api/$1"
+      "destination": "https://streamify-latest.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",
@@ -20,6 +20,6 @@
     }
   ],
   "env": {
-    "VITE_API_BASE_URL": "https://videotube-backend-wyz1.onrender.com/api/v1"
+    "VITE_API_BASE_URL": "https://streamify-latest.onrender.com/api/v1"
   }
 }
